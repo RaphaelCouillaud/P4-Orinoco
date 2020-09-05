@@ -1,6 +1,6 @@
 # P5-Orinoco
 
-MVP du site commerce en ligne Orinoco.
+MVP du site de commerce en ligne Orinoco.
 
 Installation
 Clonez ce repos. Sur le fichier backend, lancez node server; Tapez la commande "npm install" puis "npm start".
