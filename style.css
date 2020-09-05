@@ -1,0 +1,508 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Finger Paint', cursive, 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+  background: #f4ecf4;
+}
+/*-------------------------------header--------------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4ecf4;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;  
+  align-items: center;
+  color: #f4ecf4;
+  position: sticky;
+  top: 0;
+  height: 65px;
+  background: #241424;
+}
+nav a, footer a {
+  text-decoration: none;
+  color: #f4ecf4;  
+}
+nav i {
+  background: -webkit-linear-gradient(1turn, #e48c04, #945cf4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+}
+#cartorinoco {
+  width: 45px;
+  margin-right: 5px;  
+}
+#cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#indexPanier {
+  position: absolute;
+  top: -8px;
+  right: -8px;  
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;  
+  color: #241424;
+  background-color: #f4ecf4;
+  text-align: center;
+  font-family: 'Medula One', cursive;
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+#logocontainer {  
+  text-align: center; 
+}
+#logocontainer h1 {
+  font-family: 'Medula One', cursive;
+  color: #241424;
+  font-size: 2.5em;
+  margin: auto;
+}
+#logoorinoco {
+  width: 50%;
+}
+#logoorinoco:hover, #logoorinoco:hover {
+  transform: scale(1.1);
+    opacity: .5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+/*-------------------------------footer--------------------------------*/
+footer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  color: #f4ecf4;
+  margin: auto; 
+}
+#footerhaut, #footerbas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+#footerhaut {
+  background-color: #f4ecf4;
+}
+#footerbas {
+  background-color: #241424;
+}
+.rubriques {
+  margin: auto;
+  text-align: center;
+  color: #241424; 
+}
+.rubriques h4 {
+  margin-bottom: 20px;
+  margin-top: 10px; 
+  font-size: 1.5em;
+  font-family: 'Medula One', cursive;
+}
+.rubriques i {
+  font-size: 35px;
+  margin-top: 20px;
+  background: -webkit-linear-gradient(1turn, #e48c04, #945cf4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+}
+#mentions {
+  color: #241424; 
+}
+#reseaux {
+  font-size: 1.5em;
+}
+#reseaux a {
+  padding-left: 40px;
+}
+/*---------------------------Main index------------------------------------*/
+#listemeubles {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 50px 50px 50px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.meubles {
+  padding-bottom: 25px;  
+  background-image: url("img/woodtexture.jpg");
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  margin-top: 15px;  
+}
+.meublesphoto img {
+  width: 250px;
+  height: 165px;    
+  object-fit: cover;  
+  cursor: auto; 
+}
+.meublesdetails h2 {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  max-width: 250px;
+  text-align: center; 
+  width: auto;
+}
+.meublesdetails p {  
+  font-size: 1.8em;
+  width: auto;
+}
+.boutonchoisir {  
+  background: #241424;  
+  color: #f4ecf4; 
+  font-size: 1.8em;
+  font-family: 'Medula One', cursive;
+  padding: 7px 15px 7px 15px;
+  width: 80px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px; 
+  right: 65px;  
+  position: absolute;
+  bottom: 20px;
+}
+.boutonchoisir:hover, .boutonchoisir:focus, .boutonacheter:hover, .boutonacheter:focus {
+  background-color: #f4ecf4;
+  color: #241424;
+}
+/*---------------------------Main produit------------------------------------*/
+.selectionmeuble {
+  display: flex;  
+  width: 85%;
+  margin: auto;
+  margin-top: 15px;  
+  background-image: url("img/woodtexture.jpg");
+  background-size: cover;
+}
+.selectionphoto {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 20px 20px;  
+}
+.selectionphoto img {
+  max-width: 550px;
+  max-height: 550px; 
+  cursor: auto; 
+}
+#selectionoption label {
+  width: 100%;
+}
+  /*width: 650px;
+  height: 430px;    
+  object-fit: cover;*/
+.selectiondetail {
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+  align-items: center;
+}
+.selectiondetail h2 {
+  font-size: 2em;
+}
+.selectionprix {
+  font-size: 2.5em;  
+}
+#listemeubles h2 {
+  text-align: center;
+}
+.meublesnom, .meublesprix {
+  width: 30%;
+}
+/*----------select-----------*/
+#choixoption, #boutonacheter {
+  margin-bottom: 50px;
+  width: 50%;
+  font-size: 1.1em;
+  font-family: 'Medula One', cursive;
+}
+#choixoption {  
+  font-family: 'Finger Paint', cursive, 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+}
+#boutonacheter, #commander {
+  background: #241424;  
+  color: #f4ecf4; 
+  font-size: 1.8em;
+  font-family: 'Medula One', cursive;
+  padding: 7px 15px 7px 15px;  
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;   
+}
+#boutonacheter:hover, #commander:hover {  
+  background-color: #f4ecf4;
+  color: #241424;
+}
+#panierVide {
+  margin-top: 0;
+}
+/*---------------------------Main panier------------------------------------*/
+table {
+  width: 80%;    
+  border-collapse: collapse;
+  align-items: center;  
+  text-align: center;
+  margin-top: 25px;
+  border: 3px solid #241424;  
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+tr:nth-child(even) {
+  background-color: #f4ecf4;
+}
+th, td {
+  font-size: 0.8em;
+  font-weight: 
+  padding: 10px 10px 10px 10px;
+  margin: auto;    
+}
+table th:nth-child(2) {
+  width: 15%;
+}
+table th:nth-child(3) {
+  width: 50%;
+}
+table th:nth-child(4) {
+  width: 20%;  
+}
+table th:nth-child(5) {
+  width: 15%; 
+}
+
+table i {
+  color: red;
+}
+table img {
+  margin-top: 10px;
+}
+#colonneTotal {
+  font-size: 1em;
+  text-align: right;
+  border: 3px solid #241424;
+  padding-right: 20px; 
+}
+#sommeTotal {
+  font-size: 1em;  
+  width: 15%;
+  border: 3px solid #241424;
+}
+.photo_article {
+  width: 250px;
+  height: 165px;    
+  object-fit: cover;
+  cursor: auto;   
+}
+/*--------formulaire-------*/
+.formulaire_commande, .recapitulatif {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+#commander {
+  font-size: 2em;
+}
+.fas:hover {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  width: 30%; 
+  font-size: 1.2em;  
+  text-align: center;  
+}
+input {
+  width: 70%;
+  height: 3em;
+  box-sizing: border-box;  
+  outline: none;
+}
+input:focus {
+  border-color: #241424;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+}
+.form-group {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+}
+.cadre {
+  margin: auto;
+  width: 50%; 
+}
+#name, #email {
+  width: 70%;
+  margin: auto;
+}
+#panier-recap, #confirmation-recap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;  
+  font-size: 1.5em;
+  font-weight: bolder;   
+}
+.recapitulatif h2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-top: 25px; 
+}
+/*---------------------------Main commande------------------------------------*/
+.confirmation {
+  text-align: center;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+}
+.confirmation h3 {
+  font-size: 1.5em;
+}
+.textConfirm {
+  font-size: 1.3em;
+}
+.textConfirm a {
+  text-decoration: none;
+  background: -webkit-linear-gradient(1turn, #e48c04, #945cf4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+}
+#orderId {
+  font-family: 'Medula One', cursive;
+  font-size: 2.2em;
+  color: red;
+}
+#priceOrder {
+  font-weight: bolder;
+}
+/*////////////////////////////RESPONSIVE///////////////////////////////////////////////*/
+@media screen and (max-width: 1024px)
+{
+  .selectionmeuble {        
+      flex-direction: column;  
+      align-items: center;      
+  }
+  .selectionphoto img {
+     max-width: 500px;
+       max-height: 500px;       
+  }
+  table {
+      width: 95%;
+      font-size: 0.8em; 
+  }
+  #sommeTotal {
+        width: 15%;
+    }
+  #choixoption {
+      font-size: 0.8em;
+      width: 20%;     
+    }
+  select {
+    font-size: 0.5em;    
+  } 
+}
+@media screen and (max-width: 768px)
+{
+  .rubriques h4 {
+       font-size: 1.2em;      
+  }
+  .rubriques i {
+      font-size: 25px;      
+    } 
+  #reseaux {
+      font-size: 1.2em;
+  }
+  #reseaux a {
+      padding-left: 20px;
+  }
+  .selectionphoto img {
+     max-width: 375px;
+       max-height: 375px;       
+  }
+  .selectionmeuble {  
+      width: 95%; 
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+  }
+  .form-group #email {
+    width: 100%;     
+    margin: 0;
+  }
+  label, input {      
+    width: 100%;
+  }
+  table {     
+      font-size: 1em;       
+  }
+  table th {
+    display: block;
+  }
+  table th:nth-child(2), table th:nth-child(3), table th:nth-child(4), table th:nth-child(5) {
+      display: none;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 40px;
+  }
+  table td {
+    display: block;
+    text-align: center;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;    
+  }
+  #colonneTotal {  
+    text-align: center;
+    padding-right: 0;
+    width: 50%; 
+    border: none;   
+  }
+  #sommeTotal {
+      width: 50%;      
+    }
+}
+@media screen and (max-width: 480px)
+{
+  #footerbas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #mentions {
+    margin-top: 0;
+  }
+  .selectionphoto img {
+     max-width: 300px;
+       max-height: 300px;       
+  }
+  .form-control {       
+    width: 250px; 
+  }
+  .form-group #email {
+    width: 120%;
+  }
+  #commander {
+      font-size: 2em;
+      width: auto;
+  }
+  .formulaire_commande {
+    font-size: 0.8em;
+  }
+  .confirmation {  
+    width: 80%;  
+  }
+  #choixoption {
+     width: 45%;     
+    }
+}
